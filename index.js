@@ -11,9 +11,6 @@ var fs = require('fs');
 app.use(express.static('public'));
 
 
-
-
-
 io.on('connection', function(socket) {
 
     T.get('search/tweets', { q: '#coding', count: 100 }, function(err, data, response) {
