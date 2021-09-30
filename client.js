@@ -24,10 +24,12 @@ var stream = T.stream('statuses/filter', { track: '#acmiem' })
 
 stream.on('tweet', function (tweet) {
     console.log(tweet.id)
-    
-    T.post('statuses/retweet/:id', { id: tweet.id_str }, responseCallback);
+    if (tweet.retweet_count == 0) {
+        T.post('statuses/retweet/:id', { id: tweet.id_str }, responseCallback);
+        T.post('favorites/create', { id: tweet.id_str }, responseCallback);
 
-    T.post('favorites/create', { id: tweet.id_str }, responseCallback);
+    }
+
 })
 
 
