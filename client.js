@@ -7,10 +7,10 @@ var fs = require('fs');
 
 
 var T = new Twit({
-    consumer_key: 'rSalP3Awoptck0vJQEKoLiSwK',
-    consumer_secret: 'AbODv1nWQltzHGm8epLhOewli2DFUAhIdfPGNhh3TETcsVupcy',
-    access_token: '1332332221361840128-UDoWZDmS0BbTDCe1RjVpEFchGKtTRB',
-    access_token_secret: '6yNyJpnRdEyHVUdywrIbMLlFDIERplq3SnZAj4KZ7eOd1',
+    consumer_key: 'BeIUIbrOlWxO8qmG9zckRqYJq',
+    consumer_secret: 'CFMfcudyNiFSqmrW6mbhDe63cYxKFfBNglmUi0rS8cRnenjmaQ',
+    access_token: 'CFMfcudyNiFSqmrW6mbhDe63cYxKFfBNglmUi0rS8cRnenjmaQ',
+    access_token_secret: 'CAD81dqaZtWcwuBiEXpe9QfSUbCyP2nfUULIWAZdMRsIH',
     timeout_ms: 60 * 1000,  // optional HTTP request timeout to apply to all requests.
 });
 
@@ -24,11 +24,8 @@ var stream = T.stream('statuses/filter', { track: '#acmiem' })
 
 stream.on('tweet', function (tweet) {
     console.log(tweet.id)
-    if (tweet.retweet_count == 0) {
-        T.post('statuses/retweet/:id', { id: tweet.id_str }, responseCallback);
-        T.post('favorites/create', { id: tweet.id_str }, responseCallback);
-
-    }
+    T.post('statuses/retweet/:id', { id: tweet.id_str }, responseCallback);
+    T.post('favorites/create', { id: tweet.id_str }, responseCallback);
 
 })
 
