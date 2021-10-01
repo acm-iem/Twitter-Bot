@@ -7,10 +7,10 @@ var fs = require('fs');
 
 
 var T = new Twit({
-    consumer_key: 'BeIUIbrOlWxO8qmG9zckRqYJq',
-    consumer_secret: 'CFMfcudyNiFSqmrW6mbhDe63cYxKFfBNglmUi0rS8cRnenjmaQ',
-    access_token: 'CFMfcudyNiFSqmrW6mbhDe63cYxKFfBNglmUi0rS8cRnenjmaQ',
-    access_token_secret: 'CAD81dqaZtWcwuBiEXpe9QfSUbCyP2nfUULIWAZdMRsIH',
+    consumer_key: '505LeLAjIRWU0WkXLr373xPy4',
+    consumer_secret: 'DfAcXmT6S7nFk3NpecXJgdW3P07a94nAyQG0eLfXD5TqqLz3Nv',
+    access_token: '1432237063743557636-XXvw6HGr2WrVVEDVNlmojdVAzr97kC',
+    access_token_secret: 'n5GcLzCOhacYe2xPuIrkp8dda3GDSMaKnf9sdigNzKfYN',
     timeout_ms: 60 * 1000,  // optional HTTP request timeout to apply to all requests.
 });
 
