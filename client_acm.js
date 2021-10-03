@@ -1,9 +1,9 @@
-var Twit = require('twit');
+var Twit = require('twit');  // Linking twitter handle
 const express = require('express');
 const app = express();
-const server = require('http').Server(app);
-var io = require('socket.io')(server);
-var fs = require('fs');
+const server = require('http').Server(app); // Importing modules. 
+var io = require('socket.io')(server);  // Including module socket.io.
+var fs = require('fs');  
 
 
 var T = new Twit({
@@ -17,7 +17,7 @@ var T = new Twit({
 
 function responseCallback(err, data, response) {
 
-    console.log(err);
+    console.log(err);   
 
 }
 
@@ -25,13 +25,13 @@ function responseCallback(err, data, response) {
 var stream = T.stream('statuses/filter', { track: '#acmiem' })
 
 stream.on('tweet', function (tweet) {
-    console.log(tweet.id)
+    console.log(tweet.id)   //Console logging module.
 
     //Bot Retweets the Tweet
-    T.post('statuses/retweet/:id', { id: tweet.id_str }, responseCallback);
+    T.post('statuses/retweet/:id', { id: tweet.id_str }, responseCallback); //Bot creation function
 
     //Bot Likes the Tweet
-    T.post('favorites/create', { id: tweet.id_str }, responseCallback);
+    T.post('favorites/create', { id: tweet.id_str }, responseCallback); //Bot creation function
 
 })
 
