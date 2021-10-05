@@ -1,12 +1,28 @@
+# Getting started with Twitter-Bot
+
 ## How to Contribute? :point_down:
 
 1. Fork the repository
 
-3. Clone the repository  
+![fork](https://user-images.githubusercontent.com/63325246/136012933-093312f1-c789-4147-bb66-d3f930f97cfb.jpg)
+
+2. Clone the repository  
 ```
 git clone https://github.com/<your-github-username>/Twitter-Bot.git
 ```
+
 3. Go into the directory containing the project, and get started
+```
+cd Twitter-Bot/<project-directory>
+```
+
+4. Install all of the dependencies listed below before executing it on your local system:
+```
+npm install twit
+```
+```
+npm install socket.io
+```
 
 ## How to make a pull request? 	:man_technologist:
 
