@@ -26,10 +26,12 @@ npm install socket.io
 
 ## How to make a pull request? 	:man_technologist:
 
-1. Before making a pull request, ask the admin to assign you the issue you want to work on.
+1. Before making a pull request, 
+- go to the Issues tab of the repository and click on the issue you want to work on. 
+- Under that issue, write a comment asking permission for the admin of the repository to assign you the issue you want to work on.
 - For example, 
 ```
-  Hey, I would like to work on this issue. Can you assign it to me?
+  I would like to work on this issue. Can you assign it to me?
 ```
 
 2. After cloning the repository on your local machine you can switch to the cloned repository.
@@ -60,7 +62,7 @@ npm install socket.io
 
 9. Click the contribute button to bring up a drop-down menu; select the pull request option from the menu.
 
-10. While making a pull request, link the issue in the description.
+10. But before making a pull request, be sure to link the issue in the description box for which you are creating the pull request.
 
 **Note: A pull request allows you to merge your changes into the main project.**
 
