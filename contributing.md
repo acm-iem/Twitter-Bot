@@ -1,118 +1,71 @@
-# Twitter Bot
+# Getting started with Twitter-Bot
 
-<h1 align="center">Getting Started with Twitter Bot</h1> 
-<br>
+## How to Contribute? :point_down:
 
-<div align="center">
+1. Fork the repository
 
-[![Welcome to my profile](https://img.shields.io/badge/Hello,Programmer!-Welcome-blue.svg?style=flat&logo=github)](https://github.com/utkarsh1504)
-[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/acm-iem/Twitter-Bot)
-![Lines of code](https://img.shields.io/tokei/lines/github/acm-iem/Twitter-Bot?color=red&label=Lines%20of%20Code)
-![License](https://img.shields.io/bower/l/react?color=green)
-![Stars](https://img.shields.io/github/stars/acm-iem/Twitter-Bot?style=flat&logo=github)
-![Forks](https://img.shields.io/github/forks/acm-iem/Twitter-Bot?style=flat&logo=github)
+![fork](https://user-images.githubusercontent.com/63325246/136012933-093312f1-c789-4147-bb66-d3f930f97cfb.jpg)
 
-</div>
-
-<div align="center">
-  <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg" alt="hacktoberfest21">
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://forthebadge.com/images/badges/for-you.svg">
-  <img src="https://forthebadge.com/images/badges/uses-html.svg" alt="html">
-  <img src="https://forthebadge.com/images/badges/made-with-markdown.svg" alt="css">
-  
-  <img src="https://forthebadge.com/images/badges/made-with-javascript.svg" alt="js">
-  <img src="https://forthebadge.com/images/badges/open-source.svg" alt="os">
-  <img src="https://forthebadge.com/images/badges/check-it-out.svg" alt="check">
-  <img src="" alt="">
-  <img src="https://forthebadge.com/images/badges/built-by-developers.svg" />
-</div>
-
-
-<h2>Table of Contents</h2>
-<ol>
-    <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#getting-started">Lesson Requests</a></li>
-    <li><a href="#contribute">Contributing</a></li>
-    <li><a href="#prs">Pull Requests</a></li>
-    <li><a href="#license">License</a></li>
-</ol>
-
-
-## **Getting Started**
-
-For the quick start, you can follow the steps below:
-
-1. Star <a href="https://github.com/acm-iem/Twitter-Bot" title="this">this</a> repository.
-2. Fork <a href="https://github.com/acm-iem/Twitter-Bot" title="this">this</a> repository.
-3. Clone the **forked** repository.
-
-```yml
+2. Clone the repository  
+```
 git clone https://github.com/<your-github-username>/Twitter-Bot.git
 ```
-3. Navigate to the project directory.
 
-```py
-cd Twitter-Bot
+3. Go into the directory containing the project, and get started
+```
+cd Twitter-Bot/<project-directory>
 ```
 
-4. Create a new branch.
-
-```yml
-git checkout -b <your_branch_name>
+4. Install all of the dependencies listed below before executing it on your local system:
+```
+npm install twit
+```
+```
+npm install socket.io
 ```
 
-Run the following command to install the required dependencies.
+## How to make a pull request? 	:man_technologist:
 
-1. `npm install` - install the required dependencies
-2. `npm start` - start the development server
-3. Open http://localhost:8000 in your browser
-
-4. [Contribute](./CONTRIBUTING.md)
-5. Stage your changes and commit
-
-```css
-git add -a
-
-git commit -m "<your_commit_message>"
+1. Before making a pull request, 
+- go to the Issues tab of the repository and click on the issue you want to work on. 
+- Under that issue, write a comment asking permission for the admin of the repository to assign you the issue you want to work on.
+- For example, 
+```
+  I would like to work on this issue. Can you assign it to me?
 ```
 
-6. Push your local commits to the remote repo.
-
-```yml
-git push -u origin <your_branch_name>
+2. After cloning the repository on your local machine you can switch to the cloned repository.
 ```
+  cd Twitter-Bot
+```
+3. Create a new branch.
+```
+  git checkout -b <your-branch-name>
+```
+4. Stage your changes.
+```
+  git add .
+```
+5. Commit the changes.
+```
+  git commit -m "Add <your-github-username>"
+```
+6. Check the status of your repository.
+```
+  git status
+```
+7. Push your repository to GitHub.
+```
+  git push origin <your-branch-name>
+```
+8. Navigate to your forked repo, and you'll find a new section at the top of the files section with a contribute button!
 
-7. Create a <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request" title="Pull Request">Pull-Request</a> to `main`.
+9. Click the contribute button to bring up a drop-down menu; select the pull request option from the menu.
 
-8. Congratulations! 🎉 you've made your contribution to <a href="https://github.com/acm-iem/Twitter-Bot" title="Twitter-Bot">Twitter Bot</a>. ✌️ ❤️ 💥
+10. But before making a pull request, be sure to link the issue in the description box for which you are creating the pull request.
 
-<h2 id="contribute">Contributing</h2>
-<p>
-   Thank you for your interest in contributing to our Repo! Pull requests are welcome. For fixing typos, please make a PR with your fixes. For other contributions, we suggest you to read our <a href="/CONTRIBUTING.md">contribution guidelines</a> to see how you can contribute to this project. We are happy for every contribution. 
-    
-</p>
+**Note: A pull request allows you to merge your changes into the main project.**
 
-<h2 id="prs">Issues & Pull Requests</h2>
+Wait for your edits to be merged before proceeding.
 
-Before making pull requests please look at our contributing guidelines. You can start working on the issue which are mentioned in issues section. Just drop a comment before working on the issue. Thank you!
-
-<h2 id="license">License</h2>
-
-The **code** is this repo is licensed under the MIT license. Feel free to use and share it as per the license.
-
-<br>
-
-# ✨ Contributors
-
-<a href="https://github.com/acm-iem/Twitter-Bot/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=acm-iem/Twitter-Bot" />
-</a>
-<div align="center">
- <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="love" />
- <img src="https://forthebadge.com/images/badges/thats-how-they-get-you.svg" alt="how">
-</div>
+Hurray! You've made a significant contribution! :partying_face:🎉
